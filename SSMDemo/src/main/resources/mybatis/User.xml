@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--此处路劲为mapper或者dao路劲保持一致-->
+<!--<mapper namespace="com.ssm.mapper.IUser" >-->
+<mapper namespace="com.ssm.repository.UserRepository" >
+    <resultMap id="BaseResultMap" type="com.ssm.model.User" ><!--对应的实体类位置 -->
+        <result column="username" property="username" jdbcType="VARCHAR" />
+        <result column="password" property="password" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <sql id="userAtr">
+        #{username},#{password}
+    </sql>
+
+    <select id="selectByUserId" parameterType="String" resultMap="BaseResultMap">
+        SELECT
+        *
+        FROM User
+        WHERE 1=1
+        <if test="_parameter != null">
+            AND username = #{username}
+        </if>
+    </select>
+
+    <insert id="insertUser" parameterType="java.util.HashMap">
+        INSERT  INTO User
+        VALUE(<include refid="userAtr"></include>)
+    </insert>
+</mapper>
