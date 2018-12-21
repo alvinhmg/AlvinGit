@@ -2,57 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35963ce4-80fa-4eb9-ac49-bee067e7cdf8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Alvin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alvin/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alvin/dao/IUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alvin/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alvin/services/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alvin/services/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/User.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/alvin/dao/IUserDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alvin/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alvin/dao/IUserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alvin/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alvin/services/IUserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alvin/services/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapper/UserDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/sql/User.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/alvin/dao/IUserDaoTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SSMDemo/.idea/artifacts/test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySSMDemo1/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../SSMDemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSMDemo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SSMDemo/src/main/java/com/ssm/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSMDemo/src/main/java/com/ssm/controller/ServiceSupport.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../SSMDemo/src/main/java/com/ssm/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SSMDemo/src/main/java/com/ssm/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SSMDemo/src/main/java/com/ssm/dao/UserDao.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../SSMDemo/src/main/java/com/ssm/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SSMDemo/src/main/java/com/ssm/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SSMDemo/src/main/java/com/ssm/servicesImp/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SSMDemo/src/main/java/com/ssm/servicesImp/UserServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SSMDemo/src/main/resources/mybatis/User.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSMDemo/src/main/resources/mybatis/User.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SSMDemo/src/main/resources/mybatis/UserMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../SSMDemo/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSMDemo/src/main/resources/spring-mvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SSMDemo/src/main/resources/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSMDemo/src/main/resources/spring-mybatis.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SSMDemo/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSMDemo/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSMDemoByIdea/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../chatRobot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chatRobot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chatRobot/src/main/java/com/chatRobot/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatRobot/src/main/java/com/chatRobot/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chatRobot/src/main/java/com/chatRobot/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatRobot/src/main/java/com/chatRobot/dao/IUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatRobot/chatRobot.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -449,7 +411,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545380272434</updated>
-      <workItem from="1545380274780" duration="7288000" />
+      <workItem from="1545380274780" duration="7456000" />
     </task>
     <servers />
   </component>
@@ -477,7 +439,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7288000" />
+    <option name="totallyTimeSpent" value="7456000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
