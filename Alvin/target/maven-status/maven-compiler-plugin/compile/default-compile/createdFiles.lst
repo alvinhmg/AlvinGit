@@ -1,0 +1,5 @@
+com/alvin/controller/UserController.class
+com/alvin/services/IUserService.class
+com/alvin/services/impl/UserServiceImpl.class
+com/alvin/model/User.class
+com/alvin/dao/IUserDao.class
