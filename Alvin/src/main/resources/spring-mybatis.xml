@@ -29,6 +29,11 @@
         <property name="acquireRetryAttempts" value="${c3p0.acquireRetryAttempts}"/>
     </bean>
 
+    <!--引入session-->
+    <bean id="session" class="com.sprucetec.commons.data.session.LocalSession" factory-method="getSession"/>
+    <!--引入response-->
+    <bean id="Response" class="com.sprucetec.commons.web.model.Response" factory-method="build"/>
+
     <!-- 配置SqlSessionFactory对象 -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <!-- 注入数据库连接池 -->

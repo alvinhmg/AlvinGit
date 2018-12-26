@@ -129,6 +129,41 @@
       <version>${spring.version}</version>
     </dependency>
 
+    <!--添加meicai common包依赖-->
+    <dependency>
+      <groupId>com.sprucetec.commons</groupId>
+      <artifactId>commons-data-api</artifactId>
+      <version>0.2.27</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.sprucetec.commons</groupId>
+      <artifactId>commons-util</artifactId>
+      <version>0.2.27</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sprucetec.commons</groupId>
+      <artifactId>commons-data-session</artifactId>
+      <version>0.2.27</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sprucetec.commons</groupId>
+      <artifactId>commons-web</artifactId>
+      <version>0.2.27</version>
+    </dependency>
+
+    <!-- JSON: jackson -->
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-core-asl</artifactId>
+      <version>1.9.12</version>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-mapper-lgpl</artifactId>
+      <version>1.9.12</version>
+    </dependency>
+
   </dependencies>
 
 

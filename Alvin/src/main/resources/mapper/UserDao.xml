@@ -8,4 +8,96 @@
         SELECT * FROM user WHERE id = #{id}
     </select>
 
+    <select id="findById" resultType="User" parameterType="long">
+        select * from user where id = #{id}
+    </select>
+
+    <insert id="add" parameterType="com.alvin.model.User" >
+        insert into user
+        (
+        <if test="email !=null and email!= ''">email</if>
+        <if test="password !=null and password!= ''">,password</if>
+        <if test="username !=null and username!= ''">,username</if>
+        <if test="role !=null and role!='' ">,role</if>
+        <if test="status !=null ">,status</if>
+        ,regTime
+        <if test="regIp !=null and regIp != ''">,regIp</if>
+        ,createTime
+        ,updateTime
+        <if test="age !=null">,age</if>
+        <if test="sex !=null and sex!= ''">,sex</if>
+        )
+        values
+        (
+        <if test="email !=null and email!= ''">#{email}</if>
+        <if test="password !=null and password!= ''">,#{password}</if>
+        <if test="username !=null and username!= ''">,#{username}</if>
+        <if test="role !=null and role!= ''">,#{role}</if>
+        <if test="status !=null">,#{status}</if>
+        ,now()
+        <if test="regIp !=null and regIp != ''">,#{regIp}</if>
+        ,now(),now()
+        <if test="age !=null ">,#{age}</if>
+        <if test="sex !=null and sex!= ''">,#{sex}</if>
+        )
+        <selectKey resultType="Long" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID() AS id
+        </selectKey>
+    </insert>
+
+    <update id="update" parameterType="com.alvin.model.User">
+        update user
+        <set>
+            <if test="age !=null ">age = #{age}</if>
+            <if test="email !=null and email!= ''">,email = #{email}</if>
+            <if test="password !=null and password!= ''">,password = #{password}</if>
+            <if test="role !=null and role!= ''">,role = #{role}</if>
+            <if test="sex !=null and sex!= ''">,sex = #{sex}</if>
+            <if test="status !=null">,status = #{status}</if>
+            <if test="username !=null and username!= ''">,username = #{username}</if>
+            ,updateTime = now()
+        </set>
+        <where>
+            id = #{id}
+        </where>
+    </update>
+
+    <update id="enable" parameterType="java.lang.Integer">
+        update  user
+        <set>
+            <if test="status != null "> status = #{status}</if>
+            ,updateTime = now()
+        </set>
+         <where>
+             id = #{id}
+         </where>
+    </update>
+
+
+    <update id="disable" parameterType="java.lang.Integer">
+        update user
+        <set>
+            <if test="status!=null"> status =#{status} </if>
+            ,update = now()
+        </set>
+        <where>
+            id = #{id}
+        </where>
+    </update>
+
+    <select id="findAll" resultType="com.alvin.model.User">
+        select * from user where 1=1
+    </select>
+
+    <select id="exists" resultType="com.alvin.model.User" parameterType="com.alvin.model.User">
+        select id,email,password,username,role,status,regTime,regIp from user
+        <where>
+            id = #{id}
+        </where>
+    </select>
+
+    <update id="state" parameterType="User">
+        update user set status = -1 where id = #{id}
+    </update>
+
 </mapper>

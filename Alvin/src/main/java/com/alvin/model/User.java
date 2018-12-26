@@ -1,16 +1,19 @@
 package com.alvin.model;
 
+import com.sprucetec.commons.data.model.BaseModel;
+
 import java.util.Date;
 
-public class User {
+public class User extends BaseModel {
     private long id;
     private String email;
     private String password;
     private String username;
     private String role;
-    private int status;
     private Date regTime;
     private String regIp;
+    private int age;
+    private String sex;
 
     public long getId() {
         return id;
@@ -52,14 +55,6 @@ public class User {
         this.role = role;
     }
 
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
-    }
-
     public Date getRegTime() {
         return regTime;
     }
@@ -74,5 +69,21 @@ public class User {
 
     public void setRegIp(String regIp) {
         this.regIp = regIp;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 }
